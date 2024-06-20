@@ -11,7 +11,7 @@ export default function Filter({
       onChange={(e) => setSelectedRegion(e.target.value)}
       className={`border p-3 mb-4 rounded-md shadow-md duration-300  ${
         darkMode &&
-        "bg-gray-600 border border-gray-700 text-white shadow-2xl duration-300"
+        "xl:bg-gray-700 lg:bg-gray-700 md:bg-gray-700 sm:bg-gray-700 bg-gray-700 border border-gray-700 text-white shadow-2xl duration-300"
       }`}
     >
       <option value="Filter by Region">Filter by Region</option>

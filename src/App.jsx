@@ -42,7 +42,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col">
+      <div className="flex flex-col h-screen  overflow-auto">
         <Header handleDarkMode={handleDarkMode} darkMode={darkMode} />
 
         <Routes>

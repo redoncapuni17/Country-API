@@ -19,7 +19,12 @@ export default function CountryItem({ countries, darkMode }) {
     .join(", ");
 
   return (
-    <main className={`${darkMode && "bg-gray-700 text-white duration-300"}`}>
+    <main
+      className={`xl:h-screen${
+        darkMode &&
+        "xl:bg-gray-800 lg:bg-gray-800 md:bg-gray-800 sm:bg-gray-800 bg-gray-800 text-white duration-300"
+      }`}
+    >
       <div className="flex xl:px-20 lg:px-16 md:px-10 sm:px-10 px-5 mt-5 mb-10">
         <Button darkMode={darkMode} />
       </div>
@@ -77,7 +82,7 @@ export default function CountryItem({ countries, darkMode }) {
                   <li
                     className={`list-none px-7 py-2  border rounded-md shadow-sm cursor-pointer hover:bg-gray-100 duration-300  ${
                       darkMode &&
-                      "bg-gray-600 hover:bg-gray-600 border border-gray-800 shadow-2xl text-white duration-300"
+                      "xl:bg-gray-700 lg:bg-gray-700 md:bg-gray-700 sm:bg-gray-700 bg-gray-700 hover:bg-gray-600 border border-gray-800 shadow-2xl text-white duration-300"
                     }`}
                     key={border}
                   >
