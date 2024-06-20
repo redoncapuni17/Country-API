@@ -30,7 +30,7 @@ export default function Menu({
           darkMode={darkMode}
         />
       </div>
-      <div className=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-16 xl:px-20 lg:px-16 md:px-10 sm:px-10 px-5 pb-10">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  xl:justify-center lg:justify-center md:justify-center sm:justify-center justify-center  gap-16 xl:px-20 lg:px-16 md:px-10 sm:px-10 px-5 pb-10">
         {searchedCountry.slice(0, 8).map((country) => (
           <li
             key={country.cca3}
