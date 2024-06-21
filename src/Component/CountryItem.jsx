@@ -20,9 +20,10 @@ export default function CountryItem({ countries, darkMode }) {
 
   return (
     <main
-      className={`xl:h-screen${
-        darkMode &&
-        "xl:bg-gray-800 lg:bg-gray-800 md:bg-gray-800 sm:bg-gray-800 bg-gray-800 text-white duration-300"
+      className={`xl:h-screen lg:h-screen md:h-screen sm:h-screen h-screen overflow-auto pb-28 ${
+        darkMode
+          ? "xl:bg-gray-800 lg:bg-gray-800 md:bg-gray-800 sm:bg-gray-800 bg-gray-800 text-white duration-300"
+          : "bg-gray-100 duration-300"
       }`}
     >
       <div className="flex xl:px-20 lg:px-16 md:px-10 sm:px-10 px-5 mt-5 mb-10">
@@ -76,13 +77,14 @@ export default function CountryItem({ countries, darkMode }) {
           </div>
           <div className="flex flex-col lg:flex-row items-start lg:items-center">
             <p className="font-semibold">Border Countries:</p>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-2 lg:gap-4 ml-0 lg:ml-2 mt-2 lg:mt-0 ">
+            <div className=" grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-2 lg:gap-4 ml-0 lg:ml-2 mt-2 lg:mt-0 ">
               {country.borders &&
                 country.borders.map((border) => (
                   <li
-                    className={`list-none px-7 py-2  border rounded-md shadow-sm cursor-pointer hover:bg-gray-100 duration-300  ${
-                      darkMode &&
-                      "xl:bg-gray-700 lg:bg-gray-700 md:bg-gray-700 sm:bg-gray-700 bg-gray-700 hover:bg-gray-600 border border-gray-800 shadow-2xl text-white duration-300"
+                    className={`list-none px-7 py-2  border rounded-md shadow-sm cursor-pointer flex justify-center  ${
+                      darkMode
+                        ? "xl:bg-gray-700 lg:bg-gray-700 md:bg-gray-700 sm:bg-gray-700 bg-gray-700 hover:bg-gray-600 border border-gray-800 shadow-2xl text-white duration-300"
+                        : "bg-white duration-300 hover:bg-gray-100"
                     }`}
                     key={border}
                   >

@@ -13,9 +13,10 @@ export default function Menu({
 }) {
   return (
     <main
-      className={`  duration-300 ${
-        darkMode &&
-        "xl:bg-gray-800 lg:bg-gray-800 md:bg-gray-800 sm:bg-gray-800 bg-gray-800 duration-300"
+      className={`xl:h-screen lg:h-screen md:h-screen sm:h-screen h-screen overflow-auto pb-28 ${
+        darkMode
+          ? "xl:bg-gray-800 lg:bg-gray-800 md:bg-gray-800 sm:bg-gray-800 bg-gray-800 duration-300"
+          : "bg-gray-100 duration-300 "
       }`}
     >
       <div className="2xl:flex xl:flex lg:flex md:flex sm:block xl:justify-between lg:justify-between md:justify-between 2xl:gap-5 xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 xl:px-20 lg:px-16 md:px-10 sm:px-10 px-5 s py-4 ">
